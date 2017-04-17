@@ -35,6 +35,10 @@ body {
   background-image: url('../../img/background.jpg')
 }
 
+#site-container {
+  background-image: url('../../img/background.jpg')
+}
+
 /* Main content */
 
 #content article {

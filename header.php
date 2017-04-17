@@ -38,7 +38,7 @@ If you are displaying your site title in the "brand" link in the Bootstrap navba
 then you probably don't require a site title. Alternatively you can use the example below.
 See also the accompanying CSS example in theme/css/b4st.css .
 */ ?>
-<div class="container">
+<div id="site-container" class="container">
   <div class="row">
     <div class="col-sm-12">
       <h1 id="site-title">
