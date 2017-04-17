@@ -32,11 +32,11 @@ If you require a Site title and a logo, an example of how to do this is provided
 }*/
 
 body {
-  background: url('http://www.infiniteinjury.com/blog/wp-content/themes/bootstrap-4/img/background.jpg') repeat !important;
+  background: url('../../img/background.jpg');
 }
 
 /*#site-container {
-  background: url('../../img/background.jpg') repeat;
+  background: url('../../img/background.jpg') 
 }*/
 
 /* Main content */
