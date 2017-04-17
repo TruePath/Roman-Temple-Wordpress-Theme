@@ -11125,7 +11125,7 @@ If you require a Site title and a logo, an example of how to do this is provided
 }*/
 /* line 41, sass/style.scss */
 body {
-  background: url("../../img/background.jpg");
+  background: url("./img/background.jpg");
 }
 
 /*#site-container {
