@@ -42,7 +42,7 @@ See also the accompanying CSS example in theme/css/b4st.css .
   <div class="row">
     <div class="col-sm-12">
       <h1 id="site-title">
-      	<a class="text-muted" href="<?php echo home_url('/'); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home"><?php bloginfo('name'); ?></a>
+        <img src="<?php echo get_template_directory_uri(); ?>/img/header.svg" />
       </h1>
     </div>
   </div>
