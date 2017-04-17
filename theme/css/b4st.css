@@ -21,16 +21,16 @@
 }
 
 
-/*
+
 Header logo
 If you require a Site title and a logo, an example of how to do this is provided below (use your own logo):
 
 #site-title a {
   display: inline-block;
 	padding-left 60px;
-  background: url('../../img/logo.png') 0 0 no-repeat;
+  background: url('../../img/header.svg') 0 0 no-repeat;
 }
-*/
+
 
 /* Main content */
 
