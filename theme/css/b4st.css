@@ -32,11 +32,11 @@ If you require a Site title and a logo, an example of how to do this is provided
 }*/
 
 body {
-  background-image: url('../../img/background.jpg');
+  background: url('../../img/background.jpg') repeat !important;
 }
 
 /*#site-container {
-  background-image: url('../../img/background.jpg')
+  background: url('../../img/background.jpg') repeat;
 }*/
 
 /* Main content */
