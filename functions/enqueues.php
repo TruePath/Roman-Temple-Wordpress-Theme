@@ -15,7 +15,7 @@ function b4st_enqueues() {
 	// wp_enqueue_style('b4st-css');
 
 	/* Scripts */
-	wp_deregister_script('jquery')
+	wp_deregister_script('jquery');
 	wp_register_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js', false, '3.2.1', true);
 
 	 wp_deregister_script('jquery-migrate');
@@ -24,7 +24,7 @@ function b4st_enqueues() {
 	wp_enqueue_script( 'jquery' );
 	wp_enqueue_script( 'jquery-migrate' );
 	// wp_deregister_script('jquery-ui');
-	
+
 	/* Note: this above uses WordPress's onboard jQuery. You can enqueue other pre-registered scripts from WordPress too. See:
 	https://developer.wordpress.org/reference/functions/wp_enqueue_script/#Default_Scripts_Included_and_Registered_by_WordPress */
 
