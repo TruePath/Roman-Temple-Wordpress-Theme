@@ -42,7 +42,7 @@ See also the accompanying CSS example in theme/css/b4st.css .
   <div class="row">
     <div class="col-sm-12">
       <h1 id="site-title">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/header.svg" />
+        <img src="<?php echo get_template_directory_uri(); ?>/img/header.png" />
       </h1>
     </div>
   </div>
