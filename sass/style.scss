@@ -1,4 +1,11 @@
-/* Max content widths */
+@import "compass";
+@import "vars";
+@import "theme_info";
+@import "bootstrap-variables";
+// Import Bootstrap
+@import "bootstrap";
+
+ /* Max content widths */
 
 .size-auto, 
 .size-full,
@@ -163,3 +170,4 @@ ol.commentlist li ul {
 .site-footer p {
   text-align: center
 }
+
