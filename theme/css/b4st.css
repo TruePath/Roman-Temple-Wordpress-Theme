@@ -32,7 +32,7 @@ If you require a Site title and a logo, an example of how to do this is provided
 }*/
 
 body {
-  background: url('../../img/background.jpg')
+  background-image: url('../../img/background.jpg')
 }
 
 /* Main content */
