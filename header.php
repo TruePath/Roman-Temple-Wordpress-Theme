@@ -37,12 +37,12 @@ Site Title
 If you are displaying your site title in the "brand" link in the Bootstrap navbar,
 then you probably don't require a site title. Alternatively you can use the example below.
 See also the accompanying CSS example in theme/css/b4st.css .
-        <a class="text-muted" href="<?php echo home_url('/'); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home"><?php bloginfo('name'); ?></a>
 */ ?>
 <div class="container">
   <div class="row">
     <div class="col-sm-12">
       <h1 id="site-title">
+      	<a class="text-muted" href="<?php echo home_url('/'); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home"><?php bloginfo('name'); ?></a>
       </h1>
     </div>
   </div>
