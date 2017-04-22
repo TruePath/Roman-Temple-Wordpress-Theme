@@ -11092,8 +11092,12 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   }
 }
 
+@font-face {
+  font-family: 'Roman Caps';
+  src: url("./fonts/Roman_SD.ttf") format("truetype");
+}
 /* Max content widths */
-/* line 10, sass/style.scss */
+/* line 15, sass/style.scss */
 .size-auto,
 .size-full,
 .size-large,
@@ -11104,12 +11108,12 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 }
 
 /* Navbar */
-/* line 21, sass/style.scss */
+/* line 26, sass/style.scss */
 .navbar-topbar {
   border-radius: 0;
 }
 
-/* line 25, sass/style.scss */
+/* line 30, sass/style.scss */
 .navbar .dropdown-menu li {
   width: 100%;
   margin-left: 0 !important;
@@ -11123,7 +11127,7 @@ If you require a Site title and a logo, an example of how to do this is provided
 	padding-left 60px;
   background: url('../../img/header.svg') 0 0 no-repeat;
 }*/
-/* line 41, sass/style.scss */
+/* line 46, sass/style.scss */
 body {
   background: url("./img/background.jpg");
 }
@@ -11132,27 +11136,27 @@ body {
   background: url('../../img/background.jpg') 
 }*/
 /* Main content */
-/* line 51, sass/style.scss */
+/* line 56, sass/style.scss */
 #content article {
   margin: 40px 0;
 }
 
-/* line 54, sass/style.scss */
+/* line 59, sass/style.scss */
 #content header {
   margin: 20px 0;
 }
 
-/* line 57, sass/style.scss */
+/* line 62, sass/style.scss */
 #content section {
   margin-bottom: 20px;
 }
 
-/* line 60, sass/style.scss */
+/* line 65, sass/style.scss */
 #content footer {
   padding-bottom: 20px;
 }
 
-/* line 63, sass/style.scss */
+/* line 68, sass/style.scss */
 .page-header {
   background: #f9f9f9 none repeat scroll 0 0;
   border-bottom: 1px solid #eee;
@@ -11161,89 +11165,101 @@ body {
 }
 
 /* Sidebar */
-/* line 71, sass/style.scss */
+/* line 76, sass/style.scss */
 .sidebar {
   margin-top: 20px;
 }
 
-/* line 74, sass/style.scss */
+/* line 80, sass/style.scss */
 .sidebar section {
+  padding: 10px;
   margin-bottom: 40px;
+  border: 4px solid #cd950c;
+  border-radius: 15px;
 }
 
-/* line 77, sass/style.scss */
+/* line 87, sass/style.scss */
 .sidebar ul,
 .sidebar ol {
   list-style-type: none;
   padding: 0;
 }
 
-/* line 82, sass/style.scss */
+/* line 92, sass/style.scss */
 .sidebar li {
   margin: 10px 0;
+  font-family: Arial,Tahoma,Helvetica,FreeSans,sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+/* line 99, sass/style.scss */
+.sidebar h4 {
+  font-family: 'Roman Caps';
+  font-size: 1.1em;
 }
 
 /* Hide form placeholders on focus */
-/* line 88, sass/style.scss */
+/* line 106, sass/style.scss */
 input:focus::-webkit-input-placeholder {
   color: transparent;
 }
 
-/* line 89, sass/style.scss */
+/* line 107, sass/style.scss */
 input:focus:-moz-placeholder {
   color: transparent;
 }
 
 /* FF 4-18 */
-/* line 90, sass/style.scss */
+/* line 108, sass/style.scss */
 input:focus::-moz-placeholder {
   color: transparent;
 }
 
 /* FF 19+ */
-/* line 91, sass/style.scss */
+/* line 109, sass/style.scss */
 textarea:focus::-webkit-input-placeholder {
   color: transparent;
 }
 
-/* line 92, sass/style.scss */
+/* line 110, sass/style.scss */
 textarea:focus:-moz-placeholder {
   color: transparent;
 }
 
 /* FF 4-18 */
-/* line 93, sass/style.scss */
+/* line 111, sass/style.scss */
 textarea:focus::-moz-placeholder {
   color: transparent;
 }
 
 /* FF 19+ */
 /* Comments */
-/* line 97, sass/style.scss */
+/* line 115, sass/style.scss */
 #respond {
   margin-top: 40px;
 }
 
-/* line 100, sass/style.scss */
+/* line 118, sass/style.scss */
 ol.commentlist {
   counter-reset: li;
   /* Initiate a counter */
   padding: 0;
 }
 
-/* line 104, sass/style.scss */
+/* line 122, sass/style.scss */
 ol.commentlist ul {
   padding: 0;
 }
 
-/* line 107, sass/style.scss */
+/* line 125, sass/style.scss */
 ol.commentlist > li {
   position: relative;
   margin: 0 0 20px 0;
   list-style: none;
 }
 
-/* line 112, sass/style.scss */
+/* line 130, sass/style.scss */
 ol.commentlist > li:before {
   content: "Thread " counter(li);
   /* Use the counter as content */
@@ -11259,73 +11275,73 @@ ol.commentlist > li:before {
   color: #999;
 }
 
-/* line 124, sass/style.scss */
+/* line 142, sass/style.scss */
 ol.commentlist li ol,
 ol.commentlist li ul {
   list-style-type: none;
   margin: 0;
 }
 
-/* line 130, sass/style.scss */
+/* line 148, sass/style.scss */
 .commentlist li li {
   background: #f9f9f9;
 }
 
-/* line 133, sass/style.scss */
+/* line 151, sass/style.scss */
 .commentlist li li li {
   background: #fff;
 }
 
-/* line 136, sass/style.scss */
+/* line 154, sass/style.scss */
 .commentlist li li li li {
   background: #f9f9f9;
 }
 
-/* line 139, sass/style.scss */
+/* line 157, sass/style.scss */
 .commentlist li li li li li li {
   background: #fff;
 }
 
-/* line 142, sass/style.scss */
+/* line 160, sass/style.scss */
 .commentlist li {
   padding: 20px;
 }
 
-/* line 145, sass/style.scss */
+/* line 163, sass/style.scss */
 .commentlist ul li {
   margin-top: 20px;
   margin-bottom: 0;
 }
 
-/* line 149, sass/style.scss */
+/* line 167, sass/style.scss */
 .reply p {
   margin: 0;
 }
 
 /* Site footer */
-/* line 155, sass/style.scss */
+/* line 173, sass/style.scss */
 .site-footer {
   padding: 40px 0;
 }
 
-/* line 158, sass/style.scss */
+/* line 176, sass/style.scss */
 .site-footer ul,
 .site-footer ol {
   list-style-type: none;
   padding: 0;
 }
 
-/* line 163, sass/style.scss */
+/* line 181, sass/style.scss */
 .site-footer li {
   margin: 10px 0;
 }
 
-/* line 166, sass/style.scss */
+/* line 184, sass/style.scss */
 .site-sub-footer p {
   text-align: center;
 }
 
-/* line 170, sass/style.scss */
+/* line 188, sass/style.scss */
 .site-footer p {
   text-align: center;
 }
