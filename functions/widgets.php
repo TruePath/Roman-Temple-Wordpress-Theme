@@ -1,12 +1,12 @@
 <?php
 
-function roman_temple_widgets_init() {
+function bootstrap_4_sass_init() {
 
   /*
   Sidebar (one widget area)
    */
   register_sidebar( array(
-    'name'            => __( 'Left Sidebar', 'roman_temple' ),
+    'name'            => __( 'Left Sidebar', 'bootstrap_4_sass' ),
     'id'              => 'left-sidebar',
     'description'     => __( 'The left sidebar widget area', 'roman_temple' ),
     'before_widget'   => '<section class="%1$s %2$s">',
@@ -16,7 +16,7 @@ function roman_temple_widgets_init() {
   ) );
 
     register_sidebar( array(
-    'name'            => __( 'Right Sidebar', 'roman_temple' ),
+    'name'            => __( 'Right Sidebar', 'bootstrap_4_sass' ),
     'id'              => 'right-sidebar',
     'description'     => __( 'The right sidebar widget area', 'roman_temple' ),
     'before_widget'   => '<section class="%1$s %2$s">',
@@ -29,8 +29,7 @@ function roman_temple_widgets_init() {
   Footer (three widget areas)
    */
   register_sidebar( array(
-    'name'            => __( 'Footer', 'roman_
-      temple ' ),
+    'name'            => __( 'Footer', 'bootstrap_4_sass' ),
     'id'              => 'footer-widget-area',
     'description'     => __( 'The footer widget area', 'roman_temple' ),
     'before_widget'   => '<div class="%1$s %2$s col-sm-4">',
@@ -40,4 +39,4 @@ function roman_temple_widgets_init() {
   ) );
 
 }
-add_action( 'widgets_init', 'roman_temple_widgets_init' );
+add_action( 'widgets_init', 'bootstrap_4_sass_init' );

@@ -1,14 +1,17 @@
 @import "compass";
+@import "font-awesome-compass";
+@import "font-awesome";
 @import "vars";
 @import "theme_info";
 @import "bootstrap-variables";
 // Import Bootstrap
 @import "bootstrap";
-
-@font-face {
-	font-family: 'Roman Caps';
-	src: url('./fonts/Roman_SD.ttf') format("truetype");
-}
+@import url('https://fonts.googleapis.com/css?family=Crafty+Girls|Gruppo');
+@import "glyphicons";
+// @font-face {
+// 	font-family: 'Roman Caps';
+// 	src: url('./fonts/Roman_SD.ttf') format("truetype");
+// }
 
  /* Max content widths */
 
@@ -43,24 +46,39 @@ If you require a Site title and a logo, an example of how to do this is provided
   background: url('../../img/header.svg') 0 0 no-repeat;
 }*/
 
-body {
-  background: url('./img/background.jpg');
-}
+
 
 /*#site-container {
   background: url('../../img/background.jpg') 
 }*/
 
+.header-image {
+	display: block;
+    margin: auto;
+}
+
+#site-description {
+	font-family: Gruppo;
+  font-size: 0.8rem;
+	color: #dce3f0;
+	text-align: center;
+	margin-bottom: 1em;
+}
+
 /* Main content */
 
 #content article {
-  margin: 40px 0
+  // margin: 40px 0;
+  border: 1px solid white;
+  background-color: #1f1f1f;
 }
 #content header {
   margin: 20px 0
 }
 #content section {
-  margin-bottom: 20px
+  margin-bottom: 20px;
+  color: white;
+  font-family: Verdana, Geneva, sans-serif;
 }
 #content footer {
   padding-bottom: 20px
@@ -71,35 +89,61 @@ body {
   margin: 40px 0 20px;
   padding: 10px 14px;
 }
+
+// #content {
+// 	width: 50% !important;
+// }
 /* Sidebar */
 
+// #right-sidebar {
+// 	width: 25% !important;
+// }
+
+// #left-sidebar {
+// 	width: 25% !important;
+// }
+
+
 .sidebar {
-  margin-top: 20px
 }
 
 .sidebar section {
-  padding: 10px;
-  margin-bottom: 40px;
-  border: 4px solid #cd950c;
-  border-radius: 15px;
+  padding: .5rem 0rem 0rem 0rem;
+  border: 1px solid #747474;
+  background-color: #1f1f1f;
+  margin-bottom: 2rem;
 }
 
 .sidebar ul,
 .sidebar ol {
   list-style-type: none;
-  padding: 0
+  text-align: left;
+  padding: 0;
+  margin: 0;
 }
 .sidebar li {
-  margin: 10px 0;
+	margin: 0;
+  padding: .2rem .5rem .2rem .5rem;
   font-family: Arial,Tahoma,Helvetica,FreeSans,sans-serif;
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 0.8rem;
 }
 
-.sidebar h4 {
-	font-family: 'Roman Caps';
-	font-size: 1.1em;
+.widget_links li {
+	border: 1px solid #747474;
 }
+
+
+.sidebar h4 {
+	padding-bottom: .5rem;
+	margin: 0;
+	font-family: 'Crafty Girls', cursive;
+	color: #6ce1c3;
+	font-size: 1.1rem;
+	text-align: center;
+  border-bottom: 1px solid #747474;
+}
+
+
 
 /* Hide form placeholders on focus */
 

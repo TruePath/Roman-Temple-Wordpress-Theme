@@ -12,14 +12,12 @@ Alternatively, notice that index.php, category.php and single.php have a post_cl
 ?>
 
 <?php if(have_posts()): while(have_posts()): the_post();?>
-    <article role="article" id="post_<?php the_ID()?>">
+    <article role="article" class="post" id="post_<?php the_ID()?>">
         <header>
-            <h2><a href="<?php the_permalink(); ?>"><?php the_title()?></a></h2>
-            <h5>
-              <em>
+            <h2 class="post_title"><a href="<?php the_permalink(); ?>"><?php the_title()?></a></h2>
+            <h5 class="byline">
                 <span class="text-muted author"><?php _e('By', 'b4st'); echo " "; the_author() ?>,</span>
                 <time  class="text-muted" datetime="<?php the_time('d-m-Y')?>"><?php the_time('jS F Y') ?></time>
-              </em>
             </h5>
         </header>
         <section>
