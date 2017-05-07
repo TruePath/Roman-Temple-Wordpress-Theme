@@ -1,6 +1,6 @@
 @import "compass";
-// @import "font-awesome-compass";
-// @import "font-awesome";
+@import "font-awesome-compass";
+@import "font-awesome";
 @import "vars";
 @import "theme_info";
 @import "bootstrap-variables";
@@ -187,11 +187,12 @@ If you require a Site title and a logo, an example of how to do this is provided
 	margin: 0;
   padding: .2rem .5rem 0rem .5rem;
   font-family: Arial,Tahoma,Helvetica,FreeSans,sans-serif;
-  font-size: 0.8rem;
+  font-size: 0.6rem;
 }
 
 .widget_links li {
 	border: 1px solid #747474;
+	padding: .2rem .5rem;
 }
 
 
