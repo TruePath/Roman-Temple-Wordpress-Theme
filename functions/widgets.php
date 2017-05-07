@@ -1,14 +1,14 @@
 <?php
 
-function bootstrap_4_sass_init() {
+function b4sass_init() {
 
   /*
   Sidebar (one widget area)
    */
   register_sidebar( array(
-    'name'            => __( 'Left Sidebar', 'bootstrap_4_sass' ),
+    'name'            => __( 'Left Sidebar', 'b4sass' ),
     'id'              => 'left-sidebar',
-    'description'     => __( 'The left sidebar widget area', 'roman_temple' ),
+    'description'     => __( 'The left sidebar widget area', 'b4sass' ),
     'before_widget'   => '<section class="%1$s %2$s">',
     'after_widget'    => '</section>',
     'before_title'    => '<h4>',
@@ -16,9 +16,9 @@ function bootstrap_4_sass_init() {
   ) );
 
     register_sidebar( array(
-    'name'            => __( 'Right Sidebar', 'bootstrap_4_sass' ),
+    'name'            => __( 'Right Sidebar', 'b4sass' ),
     'id'              => 'right-sidebar',
-    'description'     => __( 'The right sidebar widget area', 'roman_temple' ),
+    'description'     => __( 'The right sidebar widget area', 'b4sass' ),
     'before_widget'   => '<section class="%1$s %2$s">',
     'after_widget'    => '</section>',
     'before_title'    => '<h4>',
@@ -29,9 +29,9 @@ function bootstrap_4_sass_init() {
   Footer (three widget areas)
    */
   register_sidebar( array(
-    'name'            => __( 'Footer', 'bootstrap_4_sass' ),
+    'name'            => __( 'Footer', 'b4sass' ),
     'id'              => 'footer-widget-area',
-    'description'     => __( 'The footer widget area', 'roman_temple' ),
+    'description'     => __( 'The footer widget area', 'b4sass' ),
     'before_widget'   => '<div class="%1$s %2$s col-sm-4">',
     'after_widget'    => '</div>',
     'before_title'    => '<h4>',
@@ -39,4 +39,4 @@ function bootstrap_4_sass_init() {
   ) );
 
 }
-add_action( 'widgets_init', 'bootstrap_4_sass_init' );
+add_action( 'widgets_init', 'b4sass_init' );

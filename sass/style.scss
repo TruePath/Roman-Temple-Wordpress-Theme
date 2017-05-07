@@ -1,16 +1,12 @@
 @import "compass";
-@import "font-awesome-compass";
-@import "font-awesome";
+// @import "font-awesome-compass";
+// @import "font-awesome";
 @import "vars";
 @import "theme_info";
 @import "bootstrap-variables";
 // Import Bootstrap
 @import "bootstrap";
-@import url('https://fonts.googleapis.com/css?family=Crafty+Girls|Gruppo');
-@import "glyphicons";
-// @font-face {
-// 	font-family: 'Roman Caps';
-// 	src: url('./fonts/Roman_SD.ttf') format("truetype");
+@import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative|Gruppo|Inconsolata:400,700|Libre+Baskerville:400,400i,700|Merriweather:400,400i,700,700i|Rakkas|Roboto:400,400i,700,700i');// 	src: url('./fonts/Roman_SD.ttf') format("truetype");
 // }
 
  /* Max content widths */
@@ -26,15 +22,19 @@
 
 /* Navbar */
 
-.navbar-topbar {
-  border-radius: 0;
-}
+// .navbar-topbar {
+//   border-radius: 0;
+// }
 
-.navbar .dropdown-menu li {
-  width: 100%;
-  margin-left: 0 !important;
+// .navbar .dropdown-menu li {
+//   width: 100%;
+//   margin-left: 0 !important;
+// }
+.navbar-brand {
+  padding: 0;
+  width: 30px;
+  float: left;
 }
-
 
 
 /*Header logo
@@ -52,14 +52,16 @@ If you require a Site title and a logo, an example of how to do this is provided
   background: url('../../img/background.jpg') 
 }*/
 
+
+
 .header-image {
 	display: block;
     margin: auto;
 }
 
 #site-description {
-	font-family: Gruppo;
-  font-size: 0.8rem;
+	font-family: 'Gruppo', cursive;
+	font-size: 0.8rem;
 	color: #dce3f0;
 	text-align: center;
 	margin-bottom: 1em;
@@ -67,28 +69,88 @@ If you require a Site title and a logo, an example of how to do this is provided
 
 /* Main content */
 
+#content {
+	color: #aeaeae;
+}
+
 #content article {
-  // margin: 40px 0;
+	margin-bottom: 2rem;
   border: 1px solid white;
   background-color: #1f1f1f;
+  padding: .5rem;
 }
 #content header {
-  margin: 20px 0
+  margin: .2rem 0 .3rem 0;
 }
 #content section {
-  margin-bottom: 20px;
-  color: white;
-  font-family: Verdana, Geneva, sans-serif;
+  margin-bottom: .7rem;
+  color: #aeaeae;
+  font-family: 'Merriweather', serif;
+  font-size: .75rem;
 }
 #content footer {
-  padding-bottom: 20px
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 .page-header {
-  background: #f9f9f9 none repeat scroll 0 0;
-  border-bottom: 1px solid #eee;
-  margin: 40px 0 20px;
-  padding: 10px 14px;
 }
+
+.post_title, .post_title a, .page_title, .page_title a {
+	color: #d75800;
+	font-size: 1.5rem;
+	font-family: 'Libre Baskerville', serif;
+	text-align: center;
+}
+
+.post_title a:hover, .page_title a:hover {
+	color: #973203;
+	text-decoration: none;
+}
+
+.subheading, .page_subheading {
+	font-size: 1.0rem;
+	color: #ab5a23;
+	font-family: 'Libre Baskerville', serif;
+	font-style: italic;
+	text-align: center;
+}
+
+.byline {
+	font-size: .8rem;
+	color: #666666;
+	font-family: 'Rakkas', cursive;
+}
+
+.author {
+}
+
+.datetime {
+}
+
+.category_title {
+	font-family: 'Cinzel Decorative', cursive;
+	font-size: 1.7rem;
+	color: #aeaeae;
+	text-align: center;
+}
+
+.related_content {
+	margin-top: 1rem;
+	padding-top: 1rem;
+	border-top: 1px solid white;
+}
+
+.related_content h3 {
+	color: #d75800;
+	font-size: 1.1rem;
+	font-family: 'Libre Baskerville', serif;
+	text-align: center;
+}
+
+.related_content ul {
+	list-style: none;
+}
+
 
 // #content {
 // 	width: 50% !important;
@@ -123,7 +185,7 @@ If you require a Site title and a logo, an example of how to do this is provided
 }
 .sidebar li {
 	margin: 0;
-  padding: .2rem .5rem .2rem .5rem;
+  padding: .2rem .5rem 0rem .5rem;
   font-family: Arial,Tahoma,Helvetica,FreeSans,sans-serif;
   font-size: 0.8rem;
 }
@@ -136,81 +198,164 @@ If you require a Site title and a logo, an example of how to do this is provided
 .sidebar h4 {
 	padding-bottom: .5rem;
 	margin: 0;
-	font-family: 'Crafty Girls', cursive;
-	color: #6ce1c3;
+	font-family: 'Cinzel Decorative', cursive;
+	color: #f88a08;
 	font-size: 1.1rem;
 	text-align: center;
   border-bottom: 1px solid #747474;
 }
 
+/* general styling */
 
+code {
+	color: inherit;
+	font-family: Monaco, 'Inconsolata', monospace;
+	background: inherit;
+}
+
+pre {
+	color: inherit;
+	font-family: Monaco, 'Inconsolata', monospace !important;
+	background: inherit;
+	overflow-x: auto;
+}
+
+// pre:hover,
+// pre:focus {
+//   width: min-content;
+// }
+
+article blockquote {
+	font-family: 'Roboto', sans-serif;
+	margin: 1rem .5rem 1rem .5rem;
+	padding: .5rem;
+	background-color: #3e3e3e;
+	border-radius: 15px;
+	quotes: "\201C""\201D""\2018""\2019";
+}
+
+article blockquote p {
+  display: inline;
+}
+
+article blockquote:before {
+	 font-family: Georgia, serif; 
+	 content: open-quote;
+	 color: #f88a08;
+	 font-size: 3rem;
+	 line-height: 0;
+	 vertical-align: -.6rem;
+}
+
+article blockquote:after {
+	 font-family: Georgia, serif; 
+	 content: close-quote;
+	 color: #f88a08;
+	 font-size: 3rem;
+	 vertical-align: -2rem;
+	 line-height: 0;
+	 padding: 0;
+}
+
+article section a:visited {
+	color: #6d4195;
+}
+
+
+// article blockquote[cite]:after {
+//   content: "-" attr(cite);
+//   font-size: .75rem;
+//   font-family: Times, serif;
+//   color: #aeaeae;
+//   display: block;
+// }
+
+abbr, acronym {
+  border-bottom: .1em dotted;
+}
+
+.abt-bibliography__heading {
+	color: #d75800;
+	font-size: 1.5rem;
+	font-family: 'Libre Baskerville', serif;
+	text-align: center;
+}
 
 /* Hide form placeholders on focus */
 
-input:focus::-webkit-input-placeholder { color: transparent; }
-input:focus:-moz-placeholder { color: transparent; } /* FF 4-18 */
-input:focus::-moz-placeholder { color: transparent; } /* FF 19+ */
-textarea:focus::-webkit-input-placeholder { color: transparent; }
-textarea:focus:-moz-placeholder { color: transparent; } /* FF 4-18 */
-textarea:focus::-moz-placeholder { color: transparent; } /* FF 19+ */ 
+// input:focus::-webkit-input-placeholder { color: transparent; }
+// input:focus:-moz-placeholder { color: transparent; } /* FF 4-18 */
+// input:focus::-moz-placeholder { color: transparent; } /* FF 19+ */
+// textarea:focus::-webkit-input-placeholder { color: transparent; }
+// textarea:focus:-moz-placeholder { color: transparent; } /* FF 4-18 */
+// textarea:focus::-moz-placeholder { color: transparent; } /* FF 19+ */ 
 
 /* Comments */
 
-#respond {
-  margin-top: 40px
-}
-ol.commentlist {
-	counter-reset: li; /* Initiate a counter */
-	padding: 0
-}
-ol.commentlist ul {
-  padding: 0
-}
-ol.commentlist > li {
-	position: relative;
-	margin: 0 0 20px 0;
-	list-style: none /* Disable the normal item numbering */
-}
-ol.commentlist > li:before {
-  content: "Thread " counter(li); /* Use the counter as content */
-  counter-increment: li; /* Increment the counter by 1 */
-  position:absolute;  
-  top: 0;
-  right: 0;
-  border-bottom: 1px solid #ddd;
-  border-left: 1px solid #ddd;
-  border-bottom-left-radius: 4px;
-  padding: 5px 20px 5px 10px;
-  color: #999
-}
-ol.commentlist li ol,
-ol.commentlist li ul {
-  list-style-type: none;
-  margin: 0
+#disqus_thread {
+	color: #aeaeae;
+	background-color: #1f1f1f;
+	padding: .5rem;
 }
 
-.commentlist li li {
-  background: #f9f9f9;
+#disqus_thread p {
+	color: #aeaeae;
 }
-.commentlist li li li {
-  background: #fff
-}
-.commentlist li li li li {
-  background: #f9f9f9
-}
-.commentlist li li li li li li {
-  background: #fff
-}
-.commentlist li {
-  padding: 20px
-}
-.commentlist ul li {
-  margin-top: 20px;
-  margin-bottom: 0
-}
-.reply p {
-  margin: 0
-}
+// #respond {
+//   margin-top: 40px
+// }
+// ol.commentlist {
+// 	counter-reset: li; /* Initiate a counter */
+// 	padding: 0
+// }
+// ol.commentlist ul {
+//   padding: 0
+// }
+// ol.commentlist > li {
+// 	position: relative;
+// 	margin: 0 0 20px 0;
+// 	list-style: none /* Disable the normal item numbering */
+// }
+// ol.commentlist > li:before {
+//   content: "Thread " counter(li); /* Use the counter as content */
+//   counter-increment: li; /* Increment the counter by 1 */
+//   position:absolute;  
+//   top: 0;
+//   right: 0;
+//   border-bottom: 1px solid #ddd;
+//   border-left: 1px solid #ddd;
+//   border-bottom-left-radius: 4px;
+//   padding: 5px 20px 5px 10px;
+//   color: #999
+// }
+// ol.commentlist li ol,
+// ol.commentlist li ul {
+//   list-style-type: none;
+//   margin: 0
+// }
+
+// .commentlist li li {
+//   background: #f9f9f9;
+// }
+// .commentlist li li li {
+//   background: #fff
+// }
+// .commentlist li li li li {
+//   background: #f9f9f9
+// }
+// .commentlist li li li li li li {
+//   background: #fff
+// }
+// .commentlist li {
+//   padding: 20px
+// }
+// .commentlist ul li {
+//   margin-top: 20px;
+//   margin-bottom: 0
+// }
+// .reply p {
+//   margin: 0
+// }
 
 /* Site footer */
 

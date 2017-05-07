@@ -1,16 +1,18 @@
 <?php get_header(); ?>
 
-<div class="container">
+<div class="container-fluid">
   <div class="row">
     
-    <div class="col-sm-8">
-      <div id="content" role="main">
-        <?php get_template_part('loops/content', 'page'); ?>
-      </div><!-- /#content -->
+    <div class="col-lg-2" id="left-sidebar" role="navigation">
+       <?php get_sidebar('left'); ?>
     </div>
     
-    <div class="col-sm-4" id="sidebar" role="navigation">
-       <?php get_sidebar(); ?>
+      <div id="content" class="col-lg-7" role="main">
+          <?php get_template_part('loops/content', 'page'); ?>
+      </div><!-- /#content -->
+    
+    <div class="col-lg-3" id="right-sidebar" role="navigation">
+       <?php get_sidebar('right'); ?>
     </div>
     
   </div><!-- /.row -->

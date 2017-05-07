@@ -50,14 +50,37 @@ $defaults = array(
 );
 add_theme_support( 'custom-background', $defaults );
 
-add_theme_support( 'custom-logo', array(
-	'height'      => 64,
-	'width'       => 64,
-	'flex-height' => true,
-	'flex-width'  => true,
-	'default-image' => get_template_directory_uri() . '/img/icon.svg',
-	'header-text' => array( 'site-title', 'site-description' ),
-) );
+// add_theme_support( 'custom-logo', array(
+// 	'height'      => 64,
+// 	'width'       => 64,
+// 	'flex-height' => true,
+// 	'flex-width'  => true,
+// 	'default-image' => get_template_directory_uri() . '/img/icon.svg',
+// 	'header-text' => array( 'site-title', 'site-description' ),
+// ) );
 
 add_theme_support( 'automatic-feed-links' );
 add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'search-form', 'gallery', 'caption' ) );
+
+add_action( 'after_setup_theme', 'b4sass_after_setup' );
+function b4sass_after_setup(){
+    load_theme_textdomain( 'b4sass', get_template_directory() . '/languages' );
+}
+
+function b4sass_render_content() {
+	while( have_posts() ) {
+    the_post();
+    get_template_part( 'content', get_post_format() );
+	}
+}
+
+add_theme_support( 'infinite-scroll', array(
+	'container' => 'content',
+    'footer' => 'footer',
+    'type'           => 'scroll',
+    'footer_widgets' => 'footer-widget-area',
+    'container'      => 'content',
+    'wrapper'        => true,
+    'render'         => 'b4sass_render_content',
+    'posts_per_page' => false,
+) );

@@ -2,8 +2,8 @@
 
 // Bootstrap pagination for index and category pages
 
-if ( ! function_exists( 'b4st_pagination' ) ) {
-	function b4st_pagination() {
+if ( ! function_exists( 'b4sass_pagination' ) ) {
+	function b4sass_pagination() {
 		global $wp_query;
 		$big = 999999999; // This needs to be an unlikely integer
 		// For more options and info view the docs for paginate_links()

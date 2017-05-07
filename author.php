@@ -1,13 +1,17 @@
 <?php get_header(); ?>
 
-	<div class="container">
+	<div class="container-fluid">
 	  <div class="row">
 
-	    <div class="col-sm-8">
+	 <div class="col-lg-2" id="left-sidebar" role="navigation">
+       <?php get_sidebar('left'); ?>
+    </div>
+    
+      <div id="content" class="col-lg-7" role="main">
 
 			<header class="page-header">
 				<h1>
-                    <?php echo sprintf(__('Author %s', 'b4st'), '<strong>' . get_the_author() . '</strong>'); ?>
+                    <?php echo sprintf(__('Author %s', 'b4sass'), '<strong>' . get_the_author() . '</strong>'); ?>
 				</h1>
 			</header><!-- .page-header -->
 
@@ -15,9 +19,9 @@
 			
 		</div>
 
-		<div class="col-sm-4" id="sidebar">
-		   <?php get_sidebar(); ?>
-		</div>
+    <div class="col-lg-3" id="right-sidebar" role="navigation">
+       <?php get_sidebar('right'); ?>
+    </div>
 		
 	  </div><!-- /.row -->
 	</div><!-- /.container -->

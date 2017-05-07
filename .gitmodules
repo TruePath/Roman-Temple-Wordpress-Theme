@@ -1,0 +1,9 @@
+[submodule "javascripts/mathjax"]
+	path = javascripts/mathjax
+	url = https://github.com/mathjax/MathJax.git
+[submodule "javascripts/mathjax-contrib"]
+	path = javascripts/mathjax-contrib
+	url = https://github.com/mathjax/MathJax-third-party-extensions.git
+[submodule "javascripts/mathjax-dev"]
+	path = javascripts/mathjax-dev
+	url = https://github.com/mathjax/MathJax-dev.git

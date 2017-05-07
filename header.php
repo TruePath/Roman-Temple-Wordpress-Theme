@@ -10,40 +10,31 @@
 
 <body <?php body_class(); ?>>
 
-<nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse navbar-fixed-top">
-  <button class="navbar-toggler navbar-toggler-left" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <a class="navbar-brand" href="<?php echo home_url('/'); ?>">Navbar
-<!--     <img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" width="30" height="30" alt="">
- -->  </a>
-  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-		<?php
-          wp_nav_menu( array(
-          'menu'              => 'navbar',
-          'theme_location'    => 'navbar',
-          'depth'             => 2,
-          'container'         => '',
-          'container_class'   => '',
-          'container_id'      => '',
-          'menu_class'        => 'navbar-nav ml-auto',
-          'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
-          'walker'            => new WP_Bootstrap_Navwalker())
-      );
-    //   wp_nav_menu( array(
-    //     'theme_location'		=> 'navbar',
-    //     'container'         => false,
-    //     'menu_class'				=> '',
-    //     'fallback_cb'				=> '__return_false',
-    //   	'items_wrap'				=> '<ul id="%1$s" class="navbar-nav mr-auto mt-2 mt-lg-0 %2$s">%3$s</ul>',
-    //     'depth'							=> 2,
-				// 'walker'            => new b4st_walker_nav_menu()
-    //   ) );
-    ?>
-      </div>
-		<?php get_template_part('navbar-search'); ?>
-</nav>
 
+<nav class="navbar navbar-inverse bg-inverse navbar-toggleable-md">
+<a class="navbar-brand" href="<?php echo home_url('/'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/icon.svg" width="45" height="45" alt="<?php echo get_bloginfo( 'title' ); ?>" style="margin: 0; padding:0;"></a>
+<button class="navbar-toggler navbar-toggler-left" id="top-navbar-toggle" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
+		<?php
+       wp_nav_menu([
+     'menu'              => 'navbar',
+     'theme_location'    => 'navbar',
+     'container'       => '',
+     'container_id'    => '',
+     'container_class' => '',
+     'menu_id'         => false,
+     'menu_class'      => 'navbar-nav mr-auto',
+     'depth'           => 2,
+     'fallback_cb'     => 'bs4navwalker::fallback',
+     'walker'          => new bs4navwalker()
+   ]);
+
+    ?>
+      </div> 
+        <?php get_template_part('navbar-search'); ?>
+</nav>
 
 <div id="site-container" class="container-fluid">
   <div class="row">
