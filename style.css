@@ -15077,12 +15077,18 @@ article section a:visited {
   color: #6d4195;
 }
 
-/* line 274, sass/style.scss */
+/* line 265, sass/style.scss */
+article h1, article h2, article h3, article h4, article h5, article h6 {
+  color: #d75800;
+  font-family: 'Libre Baskerville', serif;
+}
+
+/* line 279, sass/style.scss */
 abbr, acronym {
   border-bottom: .1em dotted;
 }
 
-/* line 278, sass/style.scss */
+/* line 283, sass/style.scss */
 .abt-bibliography__heading {
   color: #d75800;
   font-size: 1.5rem;
@@ -15092,42 +15098,42 @@ abbr, acronym {
 
 /* Hide form placeholders on focus */
 /* Comments */
-/* line 296, sass/style.scss */
+/* line 301, sass/style.scss */
 #disqus_thread {
   color: #aeaeae;
   background-color: #1f1f1f;
   padding: .5rem;
 }
 
-/* line 302, sass/style.scss */
+/* line 307, sass/style.scss */
 #disqus_thread p {
   color: #aeaeae;
 }
 
 /* Site footer */
-/* line 363, sass/style.scss */
+/* line 368, sass/style.scss */
 .site-footer {
   padding: 40px 0;
 }
 
-/* line 366, sass/style.scss */
+/* line 371, sass/style.scss */
 .site-footer ul,
 .site-footer ol {
   list-style-type: none;
   padding: 0;
 }
 
-/* line 371, sass/style.scss */
+/* line 376, sass/style.scss */
 .site-footer li {
   margin: 10px 0;
 }
 
-/* line 374, sass/style.scss */
+/* line 379, sass/style.scss */
 .site-sub-footer p {
   text-align: center;
 }
 
-/* line 378, sass/style.scss */
+/* line 383, sass/style.scss */
 .site-footer p {
   text-align: center;
 }

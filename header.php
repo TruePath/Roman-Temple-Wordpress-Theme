@@ -26,7 +26,7 @@
      'container_class' => '',
      'menu_id'         => false,
      'menu_class'      => 'navbar-nav mr-auto',
-     'depth'           => 2,
+     'depth'           => 0,
      'fallback_cb'     => 'bs4navwalker::fallback',
      'walker'          => new bs4navwalker()
    ]);
