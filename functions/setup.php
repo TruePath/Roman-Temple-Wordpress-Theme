@@ -84,3 +84,10 @@ add_theme_support( 'infinite-scroll', array(
     'render'         => 'b4sass_render_content',
     'posts_per_page' => false,
 ) );
+
+// Kill faviroll style to override
+add_action( 'wp_print_styles', 'dequeue_plugin_styles', 100 );
+ 
+function dequeue_plugin_styles() {
+    wp_dequeue_style( 'faviroll' );
+}

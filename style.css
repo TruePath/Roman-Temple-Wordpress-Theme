@@ -5,7 +5,7 @@
  */
 /* FONT PATH
  * -------------------------- */
-@import url("https://fonts.googleapis.com/css?family=Cinzel+Decorative|Gruppo|Inconsolata:400,700|Libre+Baskerville:400,400i,700|Merriweather:400,400i,700,700i|Rakkas|Roboto:400,400i,700,700i");
+@import url("https://fonts.googleapis.com/css?family=Cinzel+Decorative|Gruppo|Inconsolata:400,700|Libre+Baskerville:400,400i,700|Merriweather:400,400i,700,700i");
 @font-face {
   font-family: 'FontAwesome';
   src: url(fonts/font-awesome/fontawesome-webfont.eot?v=4.7.0&1477344801);
@@ -14842,7 +14842,7 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 }
 
 /* Max content widths */
-/* line 14, sass/style.scss */
+/* line 26, sass/style.scss */
 .size-auto,
 .size-full,
 .size-large,
@@ -14853,11 +14853,131 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 }
 
 /* Navbar */
-/* line 33, sass/style.scss */
+/* line 45, sass/style.scss */
 .navbar-brand {
   padding: 0;
   width: 30px;
   float: left;
+}
+
+/* line 52, sass/style.scss */
+nav .nav-link {
+  font-family: Georgia, serif;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+/* line 57, sass/style.scss */
+nav .dropdown-header {
+  font-family: 'Libre Baskerville', serif;
+  text-align: center;
+  font-weight: bold;
+  font-size: .9rem;
+}
+
+/* line 64, sass/style.scss */
+nav .dropdown-header:before {
+  content: "\2014";
+  position: relative;
+  left: -1em;
+}
+
+/* line 70, sass/style.scss */
+nav .dropdown-header:after {
+  content: "\2014";
+  position: relative;
+  left: 1em;
+}
+
+/* line 76, sass/style.scss */
+nav .dropdown-item {
+  text-align: left;
+  font-family: 'Libre Baskerville', serif;
+  font-size: .7rem;
+}
+
+/* line 82, sass/style.scss */
+nav .dropdown-item.active {
+  color: #7f7f7f;
+  background-color: inherit;
+}
+
+/* line 87, sass/style.scss */
+nav .dropdown-menu a:hover {
+  background-color: #828282;
+}
+
+/* line 91, sass/style.scss */
+nav .dropdown-menu a.active:hover {
+  background-color: inherit;
+}
+
+/* line 95, sass/style.scss */
+nav .dropdown-menu a.menu-level-2 {
+  padding-left: 3em;
+}
+
+/* line 99, sass/style.scss */
+nav .dropdown-menu a.menu-level-2:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  text-decoration: inherit;
+  content: "";
+  position: relative;
+  left: -.2em;
+}
+
+/* line 103, sass/style.scss */
+nav .dropdown-menu a.menu-level-3 {
+  padding-left: 4em;
+}
+
+/* line 107, sass/style.scss */
+nav .dropdown-menu a.menu-level-3:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  text-decoration: inherit;
+  content: "";
+  position: relative;
+  left: -.2em;
+}
+
+/* line 111, sass/style.scss */
+nav .dropdown-menu a.menu-level-4 {
+  padding-left: 5em;
+}
+
+/* line 115, sass/style.scss */
+nav .dropdown-menu a.menu-level-4:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  text-decoration: inherit;
+  content: "";
+  position: relative;
+  left: -.2em;
+}
+
+/* line 119, sass/style.scss */
+nav .dropdown-menu a.menu-level-5 {
+  padding-left: 6em;
+}
+
+/* line 123, sass/style.scss */
+nav .dropdown-menu a.menu-level-5:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  text-decoration: inherit;
+  content: "";
+  position: relative;
+  left: -.2em;
 }
 
 /*Header logo
@@ -14871,13 +14991,13 @@ If you require a Site title and a logo, an example of how to do this is provided
 /*#site-container {
   background: url('../../img/background.jpg') 
 }*/
-/* line 57, sass/style.scss */
+/* line 144, sass/style.scss */
 .header-image {
   display: block;
   margin: auto;
 }
 
-/* line 62, sass/style.scss */
+/* line 149, sass/style.scss */
 #site-description {
   font-family: 'Gruppo', cursive;
   font-size: 0.8rem;
@@ -14887,12 +15007,12 @@ If you require a Site title and a logo, an example of how to do this is provided
 }
 
 /* Main content */
-/* line 72, sass/style.scss */
+/* line 159, sass/style.scss */
 #content {
   color: #aeaeae;
 }
 
-/* line 76, sass/style.scss */
+/* line 163, sass/style.scss */
 #content article {
   margin-bottom: 2rem;
   border: 1px solid white;
@@ -14900,26 +15020,26 @@ If you require a Site title and a logo, an example of how to do this is provided
   padding: .5rem;
 }
 
-/* line 82, sass/style.scss */
+/* line 169, sass/style.scss */
 #content header {
   margin: .2rem 0 .3rem 0;
 }
 
-/* line 85, sass/style.scss */
+/* line 172, sass/style.scss */
 #content section {
   margin-bottom: .7rem;
   color: #aeaeae;
-  font-family: 'Merriweather', serif;
+  font-family: 'Merriweather', Verdana, Geneva, serif;
   font-size: .75rem;
 }
 
-/* line 91, sass/style.scss */
+/* line 178, sass/style.scss */
 #content footer {
   padding-bottom: 0;
   margin-bottom: 0;
 }
 
-/* line 98, sass/style.scss */
+/* line 185, sass/style.scss */
 .post_title, .post_title a, .page_title, .page_title a {
   color: #d75800;
   font-size: 1.5rem;
@@ -14927,13 +15047,13 @@ If you require a Site title and a logo, an example of how to do this is provided
   text-align: center;
 }
 
-/* line 105, sass/style.scss */
+/* line 192, sass/style.scss */
 .post_title a:hover, .page_title a:hover {
   color: #973203;
   text-decoration: none;
 }
 
-/* line 110, sass/style.scss */
+/* line 197, sass/style.scss */
 .subheading, .page_subheading {
   font-size: 1.0rem;
   color: #ab5a23;
@@ -14942,14 +15062,14 @@ If you require a Site title and a logo, an example of how to do this is provided
   text-align: center;
 }
 
-/* line 118, sass/style.scss */
+/* line 205, sass/style.scss */
 .byline {
   font-size: .8rem;
   color: #666666;
-  font-family: 'Rakkas', cursive;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-/* line 130, sass/style.scss */
+/* line 217, sass/style.scss */
 .category_title {
   font-family: 'Cinzel Decorative', cursive;
   font-size: 1.7rem;
@@ -14957,14 +15077,14 @@ If you require a Site title and a logo, an example of how to do this is provided
   text-align: center;
 }
 
-/* line 137, sass/style.scss */
+/* line 224, sass/style.scss */
 .related_content {
   margin-top: 1rem;
   padding-top: 1rem;
   border-top: 1px solid white;
 }
 
-/* line 143, sass/style.scss */
+/* line 230, sass/style.scss */
 .related_content h3 {
   color: #d75800;
   font-size: 1.1rem;
@@ -14972,13 +15092,13 @@ If you require a Site title and a logo, an example of how to do this is provided
   text-align: center;
 }
 
-/* line 150, sass/style.scss */
+/* line 237, sass/style.scss */
 .related_content ul {
   list-style: none;
 }
 
 /* Sidebar */
-/* line 172, sass/style.scss */
+/* line 259, sass/style.scss */
 .sidebar section {
   padding: .5rem 0rem 0rem 0rem;
   border: 1px solid #747474;
@@ -14986,7 +15106,7 @@ If you require a Site title and a logo, an example of how to do this is provided
   margin-bottom: 2rem;
 }
 
-/* line 179, sass/style.scss */
+/* line 266, sass/style.scss */
 .sidebar ul,
 .sidebar ol {
   list-style-type: none;
@@ -14995,21 +15115,64 @@ If you require a Site title and a logo, an example of how to do this is provided
   margin: 0;
 }
 
-/* line 186, sass/style.scss */
+/* line 273, sass/style.scss */
 .sidebar li {
   margin: 0;
-  padding: .2rem .5rem .5rem .5rem;
+  padding: 0;
   font-family: Arial,Tahoma,Helvetica,FreeSans,sans-serif;
   font-size: 0.6rem;
 }
 
-/* line 193, sass/style.scss */
-.widget_links li {
-  border: 1px solid #747474;
-  padding: .2rem .5rem;
+/* line 280, sass/style.scss */
+.sidebar li a {
+  display: inline-block;
+  padding: .2em 0 .5em .5em;
+  margin: 0;
+  width: 100%;
 }
 
-/* line 199, sass/style.scss */
+/* line 287, sass/style.scss */
+.sidebar li li a {
+  padding-left: 1.5em;
+}
+
+/* line 291, sass/style.scss */
+.sidebar li li li a {
+  padding-left: 2.5em;
+}
+
+/* line 295, sass/style.scss */
+.sidebar li li li li a {
+  padding-left: 3.5em;
+}
+
+/* line 299, sass/style.scss */
+.sidebar li a:hover {
+  background-color: #bebebe;
+}
+
+/* line 303, sass/style.scss */
+.widget_links li {
+  border: 1px solid #747474;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 309, sass/style.scss */
+.widget_links li a:hover {
+  background-color: #bebebe !important;
+}
+
+/* line 317, sass/style.scss */
+li.faviroll a.faviroll {
+  padding: 0.125rem 0 0.125rem calc(1.2em + 16px) !important;
+  position: relative;
+  background-position: .7em !important;
+  line-height: 1.25rem;
+}
+
+/* You may here anhanced style the blogroll-links */
+/* line 329, sass/style.scss */
 .sidebar h4 {
   padding-bottom: .5rem;
   margin: 0;
@@ -15021,14 +15184,14 @@ If you require a Site title and a logo, an example of how to do this is provided
 }
 
 /* general styling */
-/* line 211, sass/style.scss */
+/* line 341, sass/style.scss */
 code {
   color: inherit;
   font-family: Monaco, 'Inconsolata', monospace;
   background: inherit;
 }
 
-/* line 217, sass/style.scss */
+/* line 347, sass/style.scss */
 pre {
   color: inherit;
   font-family: Monaco, 'Inconsolata', monospace !important;
@@ -15036,9 +15199,9 @@ pre {
   overflow-x: auto;
 }
 
-/* line 229, sass/style.scss */
+/* line 359, sass/style.scss */
 article blockquote {
-  font-family: 'Roboto', sans-serif;
+  font-family: Verdana, Geneva, sans-serif;
   margin: 1rem .5rem 1rem .5rem;
   padding: .5rem;
   background-color: #3e3e3e;
@@ -15046,12 +15209,12 @@ article blockquote {
   quotes: "“" "”" "‘" "’";
 }
 
-/* line 238, sass/style.scss */
+/* line 368, sass/style.scss */
 article blockquote p {
   display: inline;
 }
 
-/* line 242, sass/style.scss */
+/* line 372, sass/style.scss */
 article blockquote:before {
   font-family: Georgia, serif;
   content: open-quote;
@@ -15061,7 +15224,7 @@ article blockquote:before {
   vertical-align: -.6rem;
 }
 
-/* line 251, sass/style.scss */
+/* line 381, sass/style.scss */
 article blockquote:after {
   font-family: Georgia, serif;
   content: close-quote;
@@ -15072,23 +15235,66 @@ article blockquote:after {
   padding: 0;
 }
 
-/* line 261, sass/style.scss */
+/* line 391, sass/style.scss */
 article section a:visited {
   color: #6d4195;
 }
 
-/* line 265, sass/style.scss */
+/* line 395, sass/style.scss */
 article h1, article h2, article h3, article h4, article h5, article h6 {
   color: #d75800;
   font-family: 'Libre Baskerville', serif;
+  text-align: center;
 }
 
-/* line 279, sass/style.scss */
+/* line 401, sass/style.scss */
+article section h1:after, article section h2:after, article section h3:after, article section h4:after, article section h5:after, article section h6:after {
+  content: ' ';
+  display: block;
+  width: 80%;
+  margin: auto;
+  border: 1px solid #6c6c6c;
+  border-radius: 4px;
+  position: relative;
+  top: 3px;
+}
+
+/* line 418, sass/style.scss */
+article h1 {
+  font-size: 1.5rem;
+}
+
+/* line 422, sass/style.scss */
+article h2 {
+  font-size: 1.3rem;
+}
+
+/* line 426, sass/style.scss */
+article h3 {
+  font-size: 1.1rem;
+}
+
+/* line 430, sass/style.scss */
+article h4 {
+  font-size: 1rem;
+}
+
+/* line 434, sass/style.scss */
+article h5 {
+  font-size: .9rem;
+}
+
+/* line 438, sass/style.scss */
+article h6 {
+  font-size: .8rem;
+}
+
+/* line 450, sass/style.scss */
 abbr, acronym {
   border-bottom: .1em dotted;
 }
 
-/* line 283, sass/style.scss */
+/* line 454, sass/style.scss */
 .abt-bibliography__heading {
   color: #d75800;
   font-size: 1.5rem;
@@ -15098,42 +15304,42 @@ abbr, acronym {
 
 /* Hide form placeholders on focus */
 /* Comments */
-/* line 301, sass/style.scss */
+/* line 472, sass/style.scss */
 #disqus_thread {
   color: #aeaeae;
   background-color: #1f1f1f;
   padding: .5rem;
 }
 
-/* line 307, sass/style.scss */
+/* line 478, sass/style.scss */
 #disqus_thread p {
   color: #aeaeae;
 }
 
 /* Site footer */
-/* line 368, sass/style.scss */
+/* line 539, sass/style.scss */
 .site-footer {
   padding: 40px 0;
 }
 
-/* line 371, sass/style.scss */
+/* line 542, sass/style.scss */
 .site-footer ul,
 .site-footer ol {
   list-style-type: none;
   padding: 0;
 }
 
-/* line 376, sass/style.scss */
+/* line 547, sass/style.scss */
 .site-footer li {
   margin: 10px 0;
 }
 
-/* line 379, sass/style.scss */
+/* line 550, sass/style.scss */
 .site-sub-footer p {
   text-align: center;
 }
 
-/* line 383, sass/style.scss */
+/* line 554, sass/style.scss */
 .site-footer p {
   text-align: center;
 }
