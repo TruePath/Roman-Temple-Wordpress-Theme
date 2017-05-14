@@ -6,6 +6,7 @@
 @import "bootstrap-variables";
 // Import Bootstrap
 @import "bootstrap";
+@import "compass/css3";
 @import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative|Gruppo|Inconsolata:400,700|Libre+Baskerville:400,400i,700|Merriweather:400,400i,700,700i');// 	src: url('./fonts/Roman_SD.ttf') format("truetype");
 // }
 
@@ -478,22 +479,105 @@ abbr, acronym {
 #disqus_thread p {
 	color: #aeaeae;
 }
-// #respond {
-//   margin-top: 40px
+#respond {
+  margin-top: 40px
+}
+
+#comments {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+
+	.comment-title {
+		font-family: 'Libre Baskerville', serif;
+		text-align: center;
+		font-weight: bold;
+		font-size: .9rem;
+	}
+
+	.comment-list {
+		padding: 0;
+		margin: 0;
+	}
+
+	ul.comment-list, ol.comment-list {
+		counter-reset: li; /* Initiate a counter */
+		list-style: none;
+	}
+
+}
+
+.comment-header, .comment-footer {
+  padding-top: 0.2rem;
+  padding-right: 0.2rem;
+  padding-bottom: 0.2rem;
+  padding-left: 0.2rem;
+  margin-bottom: 0px;
+  background-color: #3e3e3e;
+}
+
+.comment-header {
+	border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgba(255, 255, 255, 0.2);
+
+  .comment-metadata {
+  	font-size: .5rem;
+  	margin:0;
+  	padding:0;
+  }
+
+  address {
+  	display: inline;
+  }
+
+  .in-reply-to-re {
+  	padding: 0 0 0 1em;
+  	margin: 0;
+  	line-height: .7rem;
+ 
+  	a {
+  		padding: 0;
+  		margin: 0;
+  	}
+  }
+
+}
+
+.comment-footer {
+	border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: rgba(255, 255, 255, 0.2);
+  text-align: right;
+  font-family: Arial,Tahoma,Helvetica,FreeSans,sans-serif;
+  font-size: 0.75rem;
+
+  a {
+  	padding: 0 .5em 0 0;
+  	margin: 0;
+  }
+
+}
+
+.comment-content {
+	padding: 1.25rem;
+}
+// .comment-header:first-child
+// {
+//   border-top-left-radius: calc(0.25rem - 1px);
+//   border-top-right-radius: calc(0.25rem - 1px);
+//   border-bottom-right-radius: 0px;
+//   border-bottom-left-radius: 0px;
 // }
-// ol.commentlist {
-// 	counter-reset: li; /* Initiate a counter */
-// 	padding: 0
-// }
-// ol.commentlist ul {
+// ul.commentlist ul {
 //   padding: 0
 // }
-// ol.commentlist > li {
+// ul.commentlist > li {
 // 	position: relative;
 // 	margin: 0 0 20px 0;
 // 	list-style: none /* Disable the normal item numbering */
 // }
-// ol.commentlist > li:before {
+// ul.commentlist > li:before {
 //   content: "Thread " counter(li); /* Use the counter as content */
 //   counter-increment: li; /* Increment the counter by 1 */
 //   position:absolute;  
@@ -505,8 +589,7 @@ abbr, acronym {
 //   padding: 5px 20px 5px 10px;
 //   color: #999
 // }
-// ol.commentlist li ol,
-// ol.commentlist li ul {
+// ul.commentlist li ul {
 //   list-style-type: none;
 //   margin: 0
 // }
@@ -539,8 +622,7 @@ abbr, acronym {
 .site-footer {
   padding: 40px 0
 }
-.site-footer ul,
-.site-footer ol {
+.site-footer ul {
   list-style-type: none;
   padding: 0
 }
