@@ -15069,22 +15069,22 @@ If you require a Site title and a logo, an example of how to do this is provided
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* line 218, sass/style.scss */
-.category_title {
+/* line 219, sass/style.scss */
+.category_title, .search_title, .page-header h1 {
   font-family: 'Cinzel Decorative', cursive;
   font-size: 1.7rem;
   color: #aeaeae;
   text-align: center;
 }
 
-/* line 225, sass/style.scss */
+/* line 226, sass/style.scss */
 .related_content {
   margin-top: 1rem;
   padding-top: 1rem;
   border-top: 1px solid white;
 }
 
-/* line 231, sass/style.scss */
+/* line 232, sass/style.scss */
 .related_content h3 {
   color: #d75800;
   font-size: 1.1rem;
@@ -15092,13 +15092,13 @@ If you require a Site title and a logo, an example of how to do this is provided
   text-align: center;
 }
 
-/* line 238, sass/style.scss */
+/* line 239, sass/style.scss */
 .related_content ul {
   list-style: none;
 }
 
 /* Sidebar */
-/* line 260, sass/style.scss */
+/* line 261, sass/style.scss */
 .sidebar section {
   padding: .5rem 0rem 0rem 0rem;
   border: 1px solid #747474;
@@ -15106,7 +15106,7 @@ If you require a Site title and a logo, an example of how to do this is provided
   margin-bottom: 2rem;
 }
 
-/* line 267, sass/style.scss */
+/* line 268, sass/style.scss */
 .sidebar ul,
 .sidebar ol {
   list-style-type: none;
@@ -15115,7 +15115,7 @@ If you require a Site title and a logo, an example of how to do this is provided
   margin: 0;
 }
 
-/* line 274, sass/style.scss */
+/* line 275, sass/style.scss */
 .sidebar li {
   margin: 0;
   padding: 0;
@@ -15123,7 +15123,7 @@ If you require a Site title and a logo, an example of how to do this is provided
   font-size: 0.6rem;
 }
 
-/* line 281, sass/style.scss */
+/* line 282, sass/style.scss */
 .sidebar li a {
   display: inline-block;
   padding: .2em 0 .5em .5em;
@@ -15131,39 +15131,39 @@ If you require a Site title and a logo, an example of how to do this is provided
   width: 100%;
 }
 
-/* line 288, sass/style.scss */
+/* line 289, sass/style.scss */
 .sidebar li li a {
   padding-left: 1.5em;
 }
 
-/* line 292, sass/style.scss */
+/* line 293, sass/style.scss */
 .sidebar li li li a {
   padding-left: 2.5em;
 }
 
-/* line 296, sass/style.scss */
+/* line 297, sass/style.scss */
 .sidebar li li li li a {
   padding-left: 3.5em;
 }
 
-/* line 300, sass/style.scss */
+/* line 301, sass/style.scss */
 .sidebar li a:hover {
   background-color: #bebebe;
 }
 
-/* line 304, sass/style.scss */
+/* line 305, sass/style.scss */
 .widget_links li {
   border: 1px solid #747474;
   padding: 0;
   margin: 0;
 }
 
-/* line 310, sass/style.scss */
+/* line 311, sass/style.scss */
 .widget_links li a:hover {
   background-color: #bebebe !important;
 }
 
-/* line 318, sass/style.scss */
+/* line 319, sass/style.scss */
 li.faviroll a.faviroll {
   padding: 0.125rem 0 0.125rem calc(1.2em + 16px) !important;
   position: relative;
@@ -15172,7 +15172,7 @@ li.faviroll a.faviroll {
 }
 
 /* You may here anhanced style the blogroll-links */
-/* line 330, sass/style.scss */
+/* line 331, sass/style.scss */
 .sidebar h4 {
   padding-bottom: .5rem;
   margin: 0;
@@ -15184,14 +15184,14 @@ li.faviroll a.faviroll {
 }
 
 /* general styling */
-/* line 342, sass/style.scss */
+/* line 343, sass/style.scss */
 code {
   color: inherit;
   font-family: Monaco, 'Inconsolata', monospace;
   background: inherit;
 }
 
-/* line 348, sass/style.scss */
+/* line 349, sass/style.scss */
 pre {
   color: inherit;
   font-family: Monaco, 'Inconsolata', monospace !important;
@@ -15199,7 +15199,7 @@ pre {
   overflow-x: auto;
 }
 
-/* line 360, sass/style.scss */
+/* line 361, sass/style.scss */
 article blockquote {
   font-family: Verdana, Geneva, sans-serif;
   margin: 1rem .5rem 1rem .5rem;
@@ -15209,12 +15209,12 @@ article blockquote {
   quotes: "“" "”" "‘" "’";
 }
 
-/* line 369, sass/style.scss */
+/* line 370, sass/style.scss */
 article blockquote p {
   display: inline;
 }
 
-/* line 373, sass/style.scss */
+/* line 374, sass/style.scss */
 article blockquote:before {
   font-family: Georgia, serif;
   content: open-quote;
@@ -15224,7 +15224,7 @@ article blockquote:before {
   vertical-align: -.6rem;
 }
 
-/* line 382, sass/style.scss */
+/* line 383, sass/style.scss */
 article blockquote:after {
   font-family: Georgia, serif;
   content: close-quote;
@@ -15235,19 +15235,19 @@ article blockquote:after {
   padding: 0;
 }
 
-/* line 392, sass/style.scss */
+/* line 393, sass/style.scss */
 article section a:visited {
   color: #6d4195;
 }
 
-/* line 396, sass/style.scss */
+/* line 397, sass/style.scss */
 article h1, article h2, article h3, article h4, article h5, article h6 {
   color: #d75800;
   font-family: 'Libre Baskerville', serif;
   text-align: center;
 }
 
-/* line 402, sass/style.scss */
+/* line 403, sass/style.scss */
 article section h1:after, article section h2:after, article section h3:after, article section h4:after, article section h5:after, article section h6:after {
   content: ' ';
   display: block;
@@ -15260,41 +15260,47 @@ article section h1:after, article section h2:after, article section h3:after, ar
 }
 
 /* line 419, sass/style.scss */
+article strong {
+  color: #dcdcdc;
+  font-weith: 700;
+}
+
+/* line 425, sass/style.scss */
 article h1 {
   font-size: 1.5rem;
 }
 
-/* line 423, sass/style.scss */
+/* line 429, sass/style.scss */
 article h2 {
   font-size: 1.3rem;
 }
 
-/* line 427, sass/style.scss */
+/* line 433, sass/style.scss */
 article h3 {
   font-size: 1.1rem;
 }
 
-/* line 431, sass/style.scss */
+/* line 437, sass/style.scss */
 article h4 {
   font-size: 1rem;
 }
 
-/* line 435, sass/style.scss */
+/* line 441, sass/style.scss */
 article h5 {
   font-size: .9rem;
 }
 
-/* line 439, sass/style.scss */
+/* line 445, sass/style.scss */
 article h6 {
   font-size: .8rem;
 }
 
-/* line 451, sass/style.scss */
+/* line 457, sass/style.scss */
 abbr, acronym {
   border-bottom: .1em dotted;
 }
 
-/* line 455, sass/style.scss */
+/* line 461, sass/style.scss */
 .abt-bibliography__heading {
   color: #d75800;
   font-size: 1.5rem;
@@ -15304,49 +15310,49 @@ abbr, acronym {
 
 /* Hide form placeholders on focus */
 /* Comments */
-/* line 473, sass/style.scss */
+/* line 479, sass/style.scss */
 #disqus_thread {
   color: #aeaeae;
   background-color: #1f1f1f;
   padding: .5rem;
 }
 
-/* line 479, sass/style.scss */
+/* line 485, sass/style.scss */
 #disqus_thread p {
   color: #aeaeae;
 }
 
-/* line 482, sass/style.scss */
+/* line 488, sass/style.scss */
 #respond {
   margin-top: 40px;
 }
 
-/* line 486, sass/style.scss */
+/* line 492, sass/style.scss */
 #comments {
   margin: 0;
   padding: 0;
   width: 100%;
 }
-/* line 491, sass/style.scss */
+/* line 497, sass/style.scss */
 #comments .comment-title {
   font-family: 'Libre Baskerville', serif;
   text-align: center;
   font-weight: bold;
   font-size: .9rem;
 }
-/* line 498, sass/style.scss */
+/* line 504, sass/style.scss */
 #comments .comment-list {
   padding: 0;
   margin: 0;
 }
-/* line 503, sass/style.scss */
+/* line 509, sass/style.scss */
 #comments ul.comment-list, #comments ol.comment-list {
   counter-reset: li;
   /* Initiate a counter */
   list-style: none;
 }
 
-/* line 510, sass/style.scss */
+/* line 516, sass/style.scss */
 .comment-header, .comment-footer {
   padding-top: 0.2rem;
   padding-right: 0.2rem;
@@ -15356,35 +15362,35 @@ abbr, acronym {
   background-color: #3e3e3e;
 }
 
-/* line 519, sass/style.scss */
+/* line 525, sass/style.scss */
 .comment-header {
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: rgba(255, 255, 255, 0.2);
 }
-/* line 524, sass/style.scss */
+/* line 530, sass/style.scss */
 .comment-header .comment-metadata {
   font-size: .5rem;
   margin: 0;
   padding: 0;
 }
-/* line 530, sass/style.scss */
+/* line 536, sass/style.scss */
 .comment-header address {
   display: inline;
 }
-/* line 534, sass/style.scss */
+/* line 540, sass/style.scss */
 .comment-header .in-reply-to-re {
   padding: 0 0 0 1em;
   margin: 0;
   line-height: .7rem;
 }
-/* line 539, sass/style.scss */
+/* line 545, sass/style.scss */
 .comment-header .in-reply-to-re a {
   padding: 0;
   margin: 0;
 }
 
-/* line 547, sass/style.scss */
+/* line 553, sass/style.scss */
 .comment-footer {
   border-top-width: 1px;
   border-top-style: solid;
@@ -15393,40 +15399,40 @@ abbr, acronym {
   font-family: Arial,Tahoma,Helvetica,FreeSans,sans-serif;
   font-size: 0.75rem;
 }
-/* line 555, sass/style.scss */
+/* line 561, sass/style.scss */
 .comment-footer a {
   padding: 0 .5em 0 0;
   margin: 0;
 }
 
-/* line 562, sass/style.scss */
+/* line 568, sass/style.scss */
 .comment-content {
   padding: 1.25rem;
 }
 
 /* Site footer */
-/* line 622, sass/style.scss */
+/* line 628, sass/style.scss */
 .site-footer {
   padding: 40px 0;
 }
 
-/* line 625, sass/style.scss */
+/* line 631, sass/style.scss */
 .site-footer ul {
   list-style-type: none;
   padding: 0;
 }
 
-/* line 629, sass/style.scss */
+/* line 635, sass/style.scss */
 .site-footer li {
   margin: 10px 0;
 }
 
-/* line 632, sass/style.scss */
+/* line 638, sass/style.scss */
 .site-sub-footer p {
   text-align: center;
 }
 
-/* line 636, sass/style.scss */
+/* line 642, sass/style.scss */
 .site-footer p {
   text-align: center;
 }
