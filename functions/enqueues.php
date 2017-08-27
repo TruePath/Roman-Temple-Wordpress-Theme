@@ -26,7 +26,7 @@ function b4sass_enqueues() {
   	wp_register_script('bootstrap-js', get_template_directory_uri() . '/javascripts/bootstrap.min.js', array('jquery'), '4.0.0-alpha.6', true);
 	wp_enqueue_script('bootstrap-js');
 
-	wp_register_script('b4st-js', get_template_directory_uri() . '/javascripts/b4st.js', false, null, true);
+	wp_register_script('b4sass-js', get_template_directory_uri() . '/javascripts/b4sass.js', false, null, true);
 	wp_enqueue_script('b4st-js');
 
 	wp_enqueue_style( 'style', get_stylesheet_uri() );
